@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://localhost/WebTeste/index.php# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Headers -->
+        <meta charset="UTF-8">
+
+<!-- Resolver o erro 404 do favicon -->
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+<!-- CSS -->
+<!--<link rel="stylesheet" href="/webteste/plugins/bootstrap_twitter3/css/bootstrap.min.css">-->
+<!--<link rel="stylesheet" href="/webteste/css/basic.css">-->
+<!--<link href="/webteste/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />-->
+<link rel="stylesheet" type="text/css" href="./WebTravel Protótipo_files/datatables.min.css">
+
+<!-- JQuery -->
+<script src="./WebTravel Protótipo_files/jquery-1.11.3.js"></script>
+
+<!-- JavaScript -->
+<script src="./WebTravel Protótipo_files/bootstrap.min.js"></script>
+<script src="./WebTravel Protótipo_files/baseScripts.js"></script>
+<script src="./WebTravel Protótipo_files/rendInterface.js"></script>
+
+<script language="JavaScript" type="text/javascript" src="./WebTravel Protótipo_files/cidades-estados-1.4-utf8.js"></script>
+
+
+<title>WebTravel Protótipo</title>
+        <!-- Controllers -->
+                                            </head>
+    <body>
+        <div id="wrap">
+            <div class="container-fluid">                
+                <!-- Menu -->
+                
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand centralizarImagem" href="http://localhost/WebTeste/">
+                <img alt="Brand" src="./WebTravel Protótipo_files/logo-mrn_150x32.png">
+            </a>                            
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="http://localhost/WebTeste/">Home<span class="sr-only">(current)</span></a></li>                
+                <li class="dropdown">
+                    <a href="./WebTravel Protótipo_files/WebTravel Protótipo.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tarefas<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a id="cad_viagem" href="./WebTravel Protótipo_files/WebTravel Protótipo.html">Cadastro da Viagem</a></li>    
+                        <li><a id="cad_viagem_pesq" href="./WebTravel Protótipo_files/WebTravel Protótipo.html">Cadastro da Viagem - com Pesquisa de Solicitante</a></li>
+                        <li><a id="prest_cont_card" href="./WebTravel Protótipo_files/WebTravel Protótipo.html">Prestação de Contas</a></li>
+                        <li><a id="prest_cont_card_pesq" href="./WebTravel Protótipo_files/WebTravel Protótipo.html">Prestação de Contas‐Pesquisa</a></li>
+                        <li role="separator" class="divider"></li>                        
+                        <li><a id="aprov_pre_viagem" href="./WebTravel Protótipo_files/WebTravel Protótipo.html">Aprovação Pré‐Viagem</a></li>
+                        <li><a id="aprov_pos_viagem" href="./WebTravel Protótipo_files/WebTravel Protótipo.html">Aprovação Pós‐Viagem</a></li>                        
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="./WebTravel Protótipo_files/WebTravel Protótipo.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Consultas<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a id="consulta" href="./WebTravel Protótipo_files/WebTravel Protótipo.html">Situação da Prestação de Contas</a></li>                                        
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="./WebTravel Protótipo_files/WebTravel Protótipo.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastros <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./WebTravel Protótipo_files/WebTravel Protótipo.html">Tipo de Despesa</a></li>
+                        <li><a href="./WebTravel Protótipo_files/WebTravel Protótipo.html">Definir Aprovadores</a></li>
+                        <li><a href="./WebTravel Protótipo_files/WebTravel Protótipo.html">Tabela de Diárias</a></li>
+                        <li><a href="./WebTravel Protótipo_files/WebTravel Protótipo.html">Motivos</a></li> 
+                    </ul>
+                </li>
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="./WebTravel Protótipo_files/WebTravel Protótipo.html">
+                    Olá, Fernando Reis                    </a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="./WebTravel Protótipo_files/WebTravel Protótipo.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perfil <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./WebTravel Protótipo_files/WebTravel Protótipo.html"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar</a></li>
+                        <li><a href="./WebTravel Protótipo_files/WebTravel Protótipo.html"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Configurações</a></li>                                        
+                        <li role="separator" class="divider"></li>
+                        <li><a href="./WebTravel Protótipo_files/WebTravel Protótipo.html"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Sair</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+                <!-- Body -->                
+                <div id="div_content" style="display: block;"><div class="container">
+    <div class="panel panel-danger">
+        <div class="panel-heading">WebTravel</div>
+        <div class="panel-body">        
+            <div class="container-fluid">
+
+                <div class="row">				
+                    <form id="fm_consulta_viag" class="form" name="myForm" action="http://localhost/WebTeste/Modules/Basic/view/consulta/valida_aprovacao.php" method="POST">
+
+                        <legend>Consulta de Viagens</legend>
+
+                        <div class="row">
+                            <fieldset class="col-md-12">
+                                <div id="example_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="example_length"><label><select name="example_length" aria-controls="example" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> resultados por página</label></div><div id="example_filter" class="dataTables_filter"><label>Pesquisar<input type="search" class="form-control input-sm" placeholder="" aria-controls="example"></label></div><table class="table table-striped table-bordered table-hover dataTable no-footer" id="example" role="grid" aria-describedby="example_info" style="width: 0px;">
+
+                                <thead><tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Id: Ordenar colunas de forma descendente" style="width: 0px;">Id</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Nome: Ordenar colunas de forma ascendente" style="width: 0px;">Nome</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Tipo do Documento: Ordenar colunas de forma ascendente" style="width: 0px;">Tipo do Documento</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="N&amp;uacute;mero da Solicita&amp;ccedil;&amp;atilde;o: Ordenar colunas de forma ascendente" style="width: 0px;">Número da Solicitação</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Data: Ordenar colunas de forma ascendente" style="width: 0px;">Data</th><th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Salary: Ordenar colunas de forma ascendente" style="width: 0px;">Salary</th></tr></thead><tbody><tr role="row" class="odd"><td class="sorting_1">Airi Satou</td><td>Accountant</td><td>Tokyo</td><td>5407</td><td>2008/11/28</td><td>$162,700</td></tr><tr role="row" class="even"><td class="sorting_1">Angelica Ramos</td><td>Chief Executive Officer (CEO)</td><td>London</td><td>5797</td><td>2009/10/09</td><td>$1,200,000</td></tr><tr role="row" class="odd"><td class="sorting_1">Ashton Cox</td><td>Junior Technical Author</td><td>San Francisco</td><td>1562</td><td>2009/01/12</td><td>$86,000</td></tr><tr role="row" class="even"><td class="sorting_1">Bradley Greer</td><td>Software Engineer</td><td>London</td><td>2558</td><td>2012/10/13</td><td>$132,000</td></tr><tr role="row" class="odd"><td class="sorting_1">Brenden Wagner</td><td>Software Engineer</td><td>San Francisco</td><td>1314</td><td>2011/06/07</td><td>$206,850</td></tr><tr role="row" class="even"><td class="sorting_1">Brielle Williamson</td><td>Integration Specialist</td><td>New York</td><td>4804</td><td>2012/12/02</td><td>$372,000</td></tr><tr role="row" class="odd"><td class="sorting_1">Caesar Vance</td><td>Pre-Sales Support</td><td>New York</td><td>8330</td><td>2011/12/12</td><td>$106,450</td></tr><tr role="row" class="even"><td class="sorting_1">Cedric Kelly</td><td>Senior Javascript Developer</td><td>Edinburgh</td><td>6224</td><td>2012/03/29</td><td>$433,060</td></tr><tr role="row" class="odd"><td class="sorting_1">Charde Marshall</td><td>Regional Director</td><td>San Francisco</td><td>6741</td><td>2008/10/16</td><td>$470,600</td></tr><tr role="row" class="even"><td class="sorting_1">Colleen Hurst</td><td>Javascript Developer</td><td>San Francisco</td><td>2360</td><td>2009/09/15</td><td>$205,500</td></tr></tbody></table><div class="dataTables_info" id="example_info" role="status" aria-live="polite">Mostrando de 1 até 10 de 36 registros</div><div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous">Anterior</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="example" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="example" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="example" data-dt-idx="4" tabindex="0">4</a></span><a class="paginate_button next" aria-controls="example" data-dt-idx="5" tabindex="0" id="example_next">Próximo</a></div></div>
+                            </fieldset>
+                        </div>
+
+                        <div class="row">
+                            <fieldset class="col-md-12">
+                                
+<table class="table table-condensed table-hover table-responsive">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Data</th>
+            <th>Tipo do Documento</th>
+            <th>Número da Solicitação</th>
+            <th>Nome</th>                                                    
+        </tr>
+    </thead>
+    <tbody>
+                            <tr>
+                                                            <td>1</td><td>12/09/2015</td><td>prestação</td><td>1799</td><td>Fernando Filipe Moraes dos Reis</td>
+                                        
+                    </tr>
+                                                    <tr>
+                                                            <td class="warning">2</td><td class="warning">18/09/2015</td><td class="warning">adiantamento</td><td class="warning">1800</td><td class="warning">Jobel Rodrigues Murta Junior</td>
+                                        
+                    </tr>
+                                                    <tr>
+                                                            <td class="success">3</td><td class="success">19/09/2015</td><td class="success">prestação</td><td class="success">1820</td><td class="success">Luiz Antônio Bouth Lobato</td>
+                                        
+                    </tr>
+                                         
+    </tbody>
+</table>                            </fieldset>
+                        </div>
+
+                        <div class="row">
+                            <fieldset class="col-md-12">
+
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="http://localhost/WebTeste/index.php#l1" aria-controls="l1" role="tab" data-toggle="tab">Resumo Adiantamento</a></li>
+                                    <li role="presentation"><a href="http://localhost/WebTeste/index.php#l2" aria-controls="l2" role="tab" data-toggle="tab">Resumo da Prestação</a></li>   
+                                    <li role="presentation"><a href="http://localhost/WebTeste/index.php#l3" aria-controls="l2" role="tab" data-toggle="tab">Rejeição</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane table-responsive fade in active" id="l1">
+                                        
+<table class="table table-condensed table-responsive">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Data</th>
+            <th>Tipo da Despesa</th>
+            <th>Quantidade</th>
+            <th>Valor</th>                                                    
+        </tr>
+    </thead>
+    <tbody>
+                            <tr>
+                                                            <td class="active">1</td><td class="active">15/07/2016</td><td class="active">Diária</td><td class="active">3</td><td class="active">R$ 150,50</td>
+                                        
+                    </tr>
+                                                    <tr>
+                                                            <td class="warning">2</td><td class="warning">16/07/2016</td><td class="warning">Diária</td><td class="warning">3</td><td class="warning">R$ 150,50</td>
+                                        
+                    </tr>
+                                                    <tr>
+                                                            <td class="success">3</td><td class="success">16/07/2016</td><td class="success">Transporte</td><td class="success">4</td><td class="success">R$ 300,00</td>
+                                        
+                    </tr>
+                                                    <tr>
+                                                            <td class="info">4</td><td class="info">16/07/2016</td><td class="info">Internet</td><td class="info">1</td><td class="info">R$ 70,00</td>
+                                        
+                    </tr>
+                                 
+        <tr class="danger">
+            <td><strong>Total</strong></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>R$ 671,00</td>                                                    
+        </tr>       
+    </tbody>
+</table>                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane table-responsive fade" id="l2">
+                                        <div class="container-fluid">
+    <div class="row">
+        <table class="table table-condensed table-responsive">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Data</th>
+                    <th>Tipo da Despesa</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>                                                    
+                </tr>
+            </thead>
+            <tbody>
+                                    <tr>
+                                                        <td class="active">1</td><td class="active">15/07/2016</td><td class="active">Diária</td><td class="active">4</td><td class="active">R$ 250,50</td>
+                                                
+                    </tr>
+                                                        <tr>
+                                                        <td class="warning">2</td><td class="warning">16/07/2016</td><td class="warning">Diária</td><td class="warning">4</td><td class="warning">R$ 200,30</td>
+                                                
+                    </tr>
+                                                        <tr>
+                                                        <td class="success">3</td><td class="success">16/07/2016</td><td class="success">Transporte</td><td class="success">4</td><td class="success">R$ 310,00</td>
+                                                
+                    </tr>
+                                                        <tr>
+                                                        <td class="info">4</td><td class="info">16/07/2016</td><td class="info">Internet</td><td class="info">1</td><td class="info">R$ 70,00</td>
+                                                
+                    </tr>
+                                     
+                <tr class="danger">
+                    <td><strong>Total</strong></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>R$ 830,80</td>                                                    
+                </tr>       
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row">
+        <div>
+            <p id="contextual" class="bg-danger"><strong>Saldo: R$ -159,80</strong></p>        </div>        
+    </div>
+</div>                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane table-responsive fade" id="l3">
+                                        
+
+
+<!-- Invoca o modal passando os atributos necessários -->
+<script src="./WebTravel Protótipo_files/modalHandler_consulta.js"></script>
+
+<div class="container-fluid">
+    <br>
+    <div class="row">
+        <p>
+            <button id="addButton" class="btn btn-default" type="button" data-toggle="modal" data-target="#addJustModal" data-title="3">
+			<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 
+				Adicionar
+		</button>        </p><p>
+    </p></div>
+
+    <div class="row">
+        <table id="tab_gastos_consult_reject" class="table table-hover table-responsive">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Data</th>
+                    <th>Justificativa</th>                    
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="bodyGasto" class="bodyTable">
+                    <tr id="1">
+                        <td>
+                    1</td><td>15/07/2016</td><td>Texto de exemplo 1</td><td>                </td>
+                                
+    </tr>
+        <tr id="2">
+                        <td class="warning">
+                    2</td><td class="warning">16/07/2016</td><td class="warning">Texto de exemplo 2</td><td class="warning">                </td>
+                                
+    </tr>
+                </tbody>
+        </table>
+    </div>
+</div>
+
+                                    </div>
+                                </div>
+
+                            </fieldset>								
+                        </div>
+
+                        <input id="dados_tabela" type="hidden" name="dados_tabela" value="[{&quot;id&quot;:1,&quot;data&quot;:&quot;15\/07\/2016&quot;,&quot;justificativa&quot;:&quot;Texto de exemplo 1&quot;},{&quot;id&quot;:2,&quot;data&quot;:&quot;16\/07\/2016&quot;,&quot;justificativa&quot;:&quot;Texto de exemplo 2&quot;}]">                        <input id="nome" type="hidden" name="nome" value="Fernando Filipe Moraes dos Reis">                        <input id="cod_viagem" type="hidden" name="cod_viagem" value="1799">
+                        <div class="row">
+                            <fieldset class="col-md-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-danger btn-sm">Aprovar</button>
+
+                                    <button type="submit" class="btn btn-danger btn-sm">Rejeitar</button>
+                                </div>							
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <!-- Modais -->
+
+    <!-- Adicionar -->
+    <div class="modal fade" id="addJustModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Nova Justificativa</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="ta_just">Justificativa:</label>
+                                <textarea class="form-control" id="ta_just" name="ta_just" rows="3" placeholder="Digite sua justificativa aqui."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    <button id="addJustSubmit" type="button" class="btn btn-primary" data-dismiss="modal">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Editar -->
+    <div class="modal fade" id="editarJustModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar Gastos</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form" name="formEditar" action="" method="POST">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="ta_just">Justificativa:</label>
+                                    <textarea class="form-control" id="ta_just" name="ta_just" rows="3" placeholder="Digite sua justificativa aqui."></textarea>
+                                </div>
+                            </div>
+                        </div>       
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    <button id="editarJustSubmit" type="submit" class="btn btn-primary" data-dismiss="modal">Aplicar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Deletar -->
+    <div class="modal fade" id="deletarJustModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-sm">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Deletar</h4>
+                </div>
+                <div class="modal-body">
+                    <center>Deseja realmente remover o item?</center>
+                    <form>
+                        <div class="form-group">                        
+                            <input type="hidden" class="form-control" id="id_item">
+                        </div>                    
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+                    <button id="deletarSubmit" type="button" class="btn btn-primary" data-dismiss="modal">Sim</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" language="javascript" src="./WebTravel Protótipo_files/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="./WebTravel Protótipo_files/tab_consulta.js"></script>   
+</div></div>
+            </div>    
+            <!-- Footer -->
+            <div id="footer">
+    <div class="container-fluid">
+        <div class="footer navbar-fixed-bottom">
+
+        </div>
+    </div>        
+</div>        </div>
+    
+
+</body></html>
