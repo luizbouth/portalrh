@@ -4,7 +4,7 @@
   </div>
   <div class="panel-body">
     <div class="container">
-        <form action="Modules/Default/View/holerite/validacao.php" method="post">
+        <form action="Modules/Default/View/validacao.php" method="post">
         <div class="row">
           <div class="col-sm-4">
             <div class="form-group">
